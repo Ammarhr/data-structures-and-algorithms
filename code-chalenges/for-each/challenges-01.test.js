@@ -153,10 +153,24 @@ Iterate over the array using forEach to determine the output based on several ru
 Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
+// Solution code here...
 const fizzbuzz = (arr) => {
-    // Solution code here...
+    const newArray = [];
+    const val = (value) => {
+        if (value % 3 === 0 && value % 5 === 0) {
+            newArray.push(`Fizz Buzz`)
+        } else if (value % 3 === 0) {
+            newArray.push(`Fizz`)
+        } else if (value % 5 === 0) {
+            newArray.push(`Buzz`)
+        } else {
+            newArray.push(value)
+        }
+    }
+    arr.forEach(val);
+    return newArray;
+}
 
-};
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
