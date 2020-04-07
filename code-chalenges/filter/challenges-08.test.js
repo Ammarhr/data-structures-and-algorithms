@@ -10,10 +10,10 @@ For example, oddValues([1,2,3]) returns [1,3].
 
 const oddValues = (arr) => {
     // Solution code here...
-    let newArr = arr.filter(number => {
+    let oddArr = arr.filter(number => {
         return (number % 2 !== 0);
     });
-    return newArr;
+    return oddArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
